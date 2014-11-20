@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="32dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/make_input"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+        android:hint="@string/enter_make" />
+
+    <EditText
+        android:id="@+id/model_input"
+        android:layout_below="@id/make_input"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="64dp"
+        android:hint="@string/enter_model" />
+
+    <EditText
+        android:id="@+id/year_input"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/model_input"
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+        android:hint="@string/enter_year" />
+
+    <LinearLayout
+        android:layout_below="@+id/year_input"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/primitive_type_button"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="@string/primitive_type"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/button_background"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/serialized_type_button"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="@string/serialized_object"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/button_background"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/parcealable_type_button"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:text="@string/parcealable_object"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/button_background"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>
